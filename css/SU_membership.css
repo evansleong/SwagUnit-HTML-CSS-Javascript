@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+h1 {
+    font-family: Silkscreen;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Table Styles */
+table{
+    border: 1px solid #bdc3c7;
+    margin-top: 30px;
+}
+
+table tr td:nth-child(2){
+    font-family: Russo;
+}
+
+table tr td:nth-child(2):hover{
+    background-color: #E1E1DF;
+    transform: scale(1.02);
+    font-size: 16px;
+    transition: ease-in 0.2s;
+}
+
+th,td{
+    border: 3px outset #D1D3E0;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+th{
+    background-color: black;
+    color: #D9CDC1;
+    font-family: Silkscreen;
+}
+
+thead th{
+    font-size: 20px;
+}
+
+tbody th{
+    text-align: left;
+}
+
+td{
+    color: black;
+    font-weight: 0.9em;
+    text-align: top;
+}
+
+/*logins*/
+article .point img{
+    height: 160px;
+}
+
+.join-us-btn button{
+    background: #222;
+    font-size: 15px;
+    font-family: Silkscreen;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 50px;
+    opacity: 1;
+}
+
+.join-us-btn button:hover {
+    opacity: 0.8;
+}
+
+#login{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.form-element{
+    color: #3498db;
+    background: transparent;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 15px;
+}
+#popup {
+    width: 380px;
+    padding: 20px 30px;
+    background: black;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    display: none;
+    margin-bottom: 30px;
+    font-family: Oxygen;
+    position: relative;
+    bottom: 110px;
+    left: 100px;
+
+}
+#popup .active {
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+#popup h1 {
+    text-align: center;
+    color: white;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+#popup .form-element {
+    margin: 15px 0px;
+}
+
+#popup .form-element a {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Silkscreen;
+}
+
+#popup .form-element a {
+    opacity: 0.5    ;
+}
+
+#popup .form-element a:hover {
+    color: yellow;
+    opacity: 1;
+    transition: ease-in-out 0.1s;
+}
+
+.form-element input[type ="email"],.form-element input[type = "password"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #72c7ff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+.form-element input[type = "email"]:focus,.form-element input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.form-element button{
+
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    font-family: Silkscreen;
+}
+.form-element button:hover{
+    font-family: Silkscreen;
+    opacity: 0.7;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px white;
+}
+
+.form-element a:visited{
+    text-decoration:none;
+}
+
+.form-element a.previous {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    opacity: 0.5;
+    user-select: none;
+}
+
+.form-element span {
+    opacity: 0.7;
+}
+
+.form-element span:hover {
+    color: yellow;
+    opacity: 1;
+    transition: ease-in-out 0.25s;
+}
+
+.form-element a.previous img{
+    height: 30px;
+    width: 30px;
+}
+
+.form-element a.previous:hover {
+    opacity: 1;
+}
+
+/*social media icon*/
+.button img{
+    margin: 0 20px;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.form-element .button{
+    display: inline-flex;
+    cursor: pointer;
+}
+.form-element .button img:hover{
+    opacity: 1;
+    transform: translate(0,-10px);
+    transition: ease-in-out 0.2s;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+

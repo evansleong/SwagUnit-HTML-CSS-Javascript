@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promotions</title>
+
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+    <link href="../css/SU_promotions.css" rel="stylesheet" >
+    <script src="../js/SU_promotionDropdown.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+        <script src="../js/SU_addToCart.js"></script>
+
+    </header>
+
+    <article>
+
+        <div class="contact">
+            <a href="SU_contactUs.html">
+                <button class="contact">Contact Us !</button>
+            </a>
+        </div>
+        
+        <div class="container collapse">
+            <div class="chat-header">
+                <div class="title">Chat</div>
+                <div class="logo"><img src="../asset/live chat icon.jpeg"></div>
+            </div>
+            <div class="chat-body"></div>
+            <div class="chat-input">
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Write a message" autofocus>
+            </div>
+            <div class="send">
+                <img src="../asset/send-msg.webp" width="30px" height="30px">
+            </div>
+        </div>
+    
+        </div>
+        <script src="../js/SU_liveChat.js" defer></script>
+        <script src="../js/SU_liveChat(E).js" defer></script>
+
+        <h1>Events</h1>
+        <div class="img-news">
+            <ul id="news">
+                <li><img src="../asset/news2.jpg" style="width:100%" height="500px"/>                
+                    <button class="dropdown-btn" onclick="dropdown()">Click here</button>
+                    <div id="promoDropdown" class="dropdown-info">
+                        <p>We are excited to announce that, due to our remarkable growth over the last 5 years, we are expanding! In fact, we are opening a new store in Taman Maluri Cheras ! We invite you to celebrate with us during the big opening day on 10th October. 50% discounts will be provided for the first 50 customers who visit our new branch that day, hope to see you on that day !</p>
+                </div>
+                </li>
+                
+
+                <li><img src="../asset/news3.jpg" style="width:100%" height="500px"/>
+                    <button class="dropdown-btn2" onclick="dropdown2()">Click here</button>
+                    <div id="promoDropdown2" class="dropdown-info2">
+                        <p>Malaysia's street label SwagUnit is collaborating with Puma organizing a Tee Design Contest that seek a new, exciting design and something very special to put on the upcoming special edition of SwagUnit x Puma T-Shirt. This collabaration is expected to officially start in January 2023.</p>
+                    </div>
+                </li>
+
+                
+                <li><img src="../asset/news4.jpg" style="width:100%" height="500px"/>
+                    <button class="dropdown-btn3" onclick="dropdown3()">Click here</button>
+                    <div id="promoDropdown3" class="dropdown-info3">
+                        <p>YES !<br> YES !<br> YES !<br> Offer up to 35% is coming around ! Do shop with us during this precious period and dont MISSED OUT !</p>
+                    </div>
+                </li>
+
+                
+                <li><img src="../asset/news5.jpeg" style="width:100%" height="500px"/>
+                    <button class="dropdown-btn4" onclick="dropdown4()">Click here</button>
+                    <div id="promoDropdown4" class="dropdown-info4">
+                        <p>Why pay for shipping !<br>
+                            Free shipping offer will be given if purchase order over RM49 ! ! !</p>
+                    </div>
+                </li>
+
+                
+                <li><img src="../asset/news6.jpeg" style="width:100%" height="500px"/>
+                    <button class="dropdown-btn5" onclick="dropdown5()">Click here</button>
+                    <div id="promoDropdown5" class="dropdown-info5">
+                        <p>Anytime, Anywhere, Anything you want.<br> However you want it, stand out
+                            with unique clothes or blend in with casual streetwear.<br> It's all up to
+                            you !</p>
+                    </div>
+                </li>
+
+
+                <li><img src="../asset/news7.jpeg" style="width:100%" height="500px"/>
+                    <button class="dropdown-btn6" onclick="dropdown6()">Click here</button>
+                    <div id="promoDropdown6" class="dropdown-info6">
+                        <p>Do like and share our social media site (facebook,instagram) to get our free giveaway t shirt !
+                            <br>
+                             <strong>*Hurry! LIMITED TIME ONLY*</strong></p>
+                    </div>
+                </li>
+            </ul>    
+        </div>
+
+    </article>
+
+    <div id="space"></div>
+    <div>
+        <a href="#"
+           id="back-to-top"
+           class="notJumping">
+            <img src="../asset/backtotop.png" width="60px">
+        </a>
+
+    <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="39" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

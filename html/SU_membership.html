@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--basics-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Membership</title>
+    
+    <!--CSS&JS Stylesheets-->
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+    <link href="../css/SU_membership.css" rel="stylesheet" > 
+    <script type="text/javascript" src="../js/SU_membership.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+        <script src="../js/SU_addToCart.js"></script>
+
+    </header>
+    <!--membership table-->
+    <article>
+
+        <div class="contact">
+            <a href="SU_contactUs.html">
+                <button class="contact">Contact Us !</button>
+            </a>
+        </div>
+        
+        <div class="container collapse">
+            <div class="chat-header">
+                <div class="title">Chat</div>
+                <div class="logo"><img src="../asset/live chat icon.jpeg"></div>
+            </div>
+            <div class="chat-body"></div>
+            <div class="chat-input">
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Write a message" autofocus>
+            </div>
+            <div class="send">
+                <img src="../asset/send-msg.webp" width="30px" height="30px">
+            </div>
+        </div>
+    
+        </div>
+        <script src="../js/SU_liveChat.js" defer></script>
+        <script src="../js/SU_liveChat(E).js" defer></script>
+        
+    <table>
+        <h1>Membership</h1>
+       <thead>
+        <tr>
+            <th colspan="5">Benefits for our members:</th>
+        </tr>
+       </thead>
+
+        <tbody>
+            <tr>
+            <th>Frees shipping</th>
+            <td>Free delivery when you shop RM50 or more</td>
+            </tr>
+
+            <tr>
+            <th>Collects points when you shop</th>
+            <td>RM1 = 1 point</td>
+            </tr>
+
+            <tr>
+            <th>Deals</th>
+            <td>Specials offer and promos to thank our Members and to celebrate big moments, like birthdays</td>
+            </tr>
+
+            <tr>
+            <th>Special member prices</th>
+            <td>10% off of your products</td>
+            </tr>
+
+            <tr>
+            <th>Get products & vouchers with your points</th>
+            <td>Bonus vouchers 100 points = RM5</td>
+            </tr>
+
+            <tr>
+            <th>Invitations to events</th>
+            <td>Bringing members together with the biggest artists and athletes.Don't forget to turn on your push notifications to get reminders</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+   <!--login section-->
+   <article>
+    <div class="point">
+    <img src="/asset/point.png" alt="point">
+    </div>
+
+    <div class="join-us-btn">
+    <button onclick="show_login()">Join Us Now !!!</button>
+    </div>
+
+    <form class="login" onsubmit="return authenticate()" method="post">
+
+    <div id="popup">
+        
+         <h1>Login</h1>
+         <div class="form-element">
+             <input type="email" id="email" name="" placeholder="Email"  required><br><br>
+             <input type="password" id="password" name="" placeholder="password" minlength="5" required><br><br> 
+             <button onclick="authenticate()">Submit</button>
+
+             Not a member ?<a href="SU_signUp.html"><abbr title="Join Us To get more rewards!! ">Sign up here</abbr></a><br>
+             or login with<br><br>
+             
+             <!--media social icon-->
+             <div class="button">
+              <a href="https://www.facebook.com/" ><img src="../asset/fb.jpeg" alt="FB"></a>
+              <a href="https://www.gmail.com/"><img src="../asset/google.jpeg" alt="Google"></a>
+          </div>
+         </div>
+    </div>
+
+</form>
+    </article>
+   
+    <div id="space"></div>
+    <div>
+        <a href="#"
+           id="back-to-top"
+           class="notJumping">
+            <img src="../asset/backtotop.png" width="60px">
+        </a>
+
+     <!--footer part-->
+     <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="39" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+                
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+

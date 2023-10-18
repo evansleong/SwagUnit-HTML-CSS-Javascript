@@ -1,0 +1,12 @@
+@charset "utf-8";
+.branding_logo {
+    display: flex;
+    position: relative;
+    top: -20px;
+    user-select: none;
+}
+
+.brand-video {
+    margin-left: 16%;
+    margin-bottom: 5%;
+}

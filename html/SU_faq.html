@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--basics-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ</title>
+    
+    <!--CSS&JS Stylesheets-->
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_faq.css" rel="stylesheet" > 
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+
+</head>
+
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+        <script src="../js/SU_addToCart.js"></script>
+
+    </header>
+
+    <div id="space"></div>
+    <div>
+        <a href="#"
+           id="back-to-top"
+           class="notJumping">
+            <img src="../asset/backtotop.png" width="60px">
+        </a>
+
+    <article>
+
+        <div class="contact">
+            <a href="SU_contactUs.html">
+                <button class="contact">Contact Us !</button>
+            </a>
+        </div>
+                <!--accordian part-->
+                <ul id="accordion">
+
+                    <h1>Frequently Asked Question</h1>
+
+                    <li>
+                        <label for="first">Delivery and order<img src="../asset/arrow for faq.png" width="20px"/></label>
+                        <input type="radio" name="accordion" id="first">
+                        <div class="answer">
+                            <p>
+                                All successful orders will be processed in around 3-5 working days.
+                                Once an order is confirmed and completed upon successful payment, you can e-mail your order number to our email and we will send you your receipt, and tracking info.
+                            </p>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <label for="second">Exchange / return / refund policy<img src="../asset/arrow for faq.png" width="20px"/></label>
+                        <input type="radio" name="accordion" id="second">
+                        <div class="answer">
+                            <p>All purchases of all items are eligible for exchange, return, and refund within 5 working days of receiving the product in the case where it is our fault for example if we made a mistake in size, colour, model or authenticity of products sold.</p>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <label for="third">Payment method<img src="../asset/arrow for faq.png" width="20px"/></label>
+                        <input type="radio" name="accordion" id="third">
+                        <div class="answer">
+                            <p>
+                                &#8560;. Online banking<br>&#8561;. e-wallet<br>&#8562;. duitnow qr pay
+                            </p>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <label for="forth">Contact us<img src="../asset/arrow for faq.png" width="20px"/></label>
+                        <input type="radio" name="accordion" id="forth">
+                        <div class="answer">
+                            <p>
+                                &#x2192	Swagunit&#10240;<strong>03-1111-3333</strong><br>
+                                &#x2192 Social media&#10240;<strong>@swagunit (instagram, facebook)</strong><br>
+                                &#x2192	E-mail&#10240;<strong>swagunit@gmail.com</strong><br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <!--accordian end-->
+
+                <div class="container collapse">
+                    <div class="chat-header">
+                        <div class="title">Chat</div>
+                        <div class="logo"><img src="../asset/live chat icon.jpeg"></div>
+                    </div>
+                    <div class="chat-body"></div>
+                    <div class="chat-input">
+                    <div class="input-sec">
+                        <input type="text" id="txtInput" placeholder="Write a message" autofocus>
+                    </div>
+                    <div class="send">
+                        <img src="../asset/send-msg.webp" width="30px" height="30px">
+                    </div>
+                </div>
+            
+                </div>
+                <script src="../js/SU_liveChat.js" defer></script>
+                <script src="../js/SU_liveChat(E).js" defer></script>
+
+                
+    </article>
+            <!--footer part-->
+    <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

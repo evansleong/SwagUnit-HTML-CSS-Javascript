@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--basics-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+    
+    <!--CSS&JS Stylesheets-->
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+    <link href="../css/SU_contactUs.css" rel="stylesheet" > 
+    <script src="../js/SU_contactUs.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                    <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+    </header>
+
+    <article>
+        <div class="container collapse">
+            <div class="chat-header">
+                <div class="title">Chat</div>
+                <div class="logo"><img src="../asset/live chat icon.jpeg"></div>
+            </div>
+            <div class="chat-body"></div>
+            <div class="chat-input">
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Write a message" autofocus>
+            </div>
+            <div class="send">
+                <img src="../asset/send-msg.webp" width="30px" height="30px">
+            </div>
+        </div>
+    
+        </div>
+        <script src="../js/SU_liveChat.js" defer></script>
+        <script src="../js/SU_liveChat(E).js" defer></script>
+
+
+        <div class="inquiry">
+            <h1>Contact Us !</h1>
+
+            <div class="contactIcon">
+
+                <div class="phone-icon">
+                    <img src="../asset/phone icon.png" height="100px" >
+                    <h4>PHONE</h4>
+                    <p><a href="tel:+0311113333">Click Me ! </a></p>
+                    <div class="hide">03-1111 3333</div>
+                </div>
+
+                <div class="address-icon">
+                    <img src="../asset/address logo.png" height="100px">
+                    <h4>ADDRESS</h4>
+                    <p>Lorong 6C/91<br>Taman Shamelin Perkasa<br>56100 Kuala Lumpur<br>WP Kuala Lumpur<br>Malaysia</p>
+                </div>
+                
+
+                <div class="email-icon">
+                    <img src="../asset/email-icon.jpg" height="100px" width="150px">
+                    <h4>EMAIL</h4>
+                    <P><a href="mailto:swagunit@gmail.com">Click Me ! </a></P>
+                    <div class="hide">swagunit@gmail.com</div>
+                </div>
+                
+            </div>
+
+            <form action>
+
+                <fieldset>
+
+                    <legend>Your Info</legend>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                        <iframe width="333" height="269" src="https://maps.google.com/maps?q=Lorong%206C/91%20Taman%20Shamelin%20Perkasa%2056100%20Kuala%20Lumpur&t=&z=19&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                        </div>
+                    </div>
+
+                <div id="user-details">
+                    <label for="textInput1">Surname<span style="color:red">*</span> :</label></br>
+                    <input  id="textInput1"
+                            type="text"
+                            placeholder="e.g. John"
+                            class="details_input"
+                            pattern="[a-z,A-Z]{1,}$"
+                            required>
+                    <span class="input_details success  ">Name valid</br></span>
+                    <span class="input_details error">Please enter a surname !</br></span>
+
+                    <br/><br/> 
+
+                    <label for="textInput2">Email<span style="color:red">*</span> :</label></br>
+                    <input  id="textInput2"
+                            type="text"
+                            placeholder="e.g. swagunit@gmail.com"
+                            class="details_input"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"
+                            required>
+                    <span class="input_details success">Email valid</br></span>
+                    <span class="input_details error"><strong>Please enter a valid email !</strong></br></span>
+
+                    <br/><br/> 
+
+
+                    <label for="textInput3">What can we help you with? :</label></br>
+                    <input  id="textInput3"
+                            type="text"
+                            placeholder="e.g. Mr Lim Kah Lok very handsome">
+
+                        <div class="submit-button">
+                            <button class="submit">Submit</button>
+                        </div>
+                 </fieldset>
+
+                </div>
+            </form>
+        </div>
+
+        
+                
+    </article>
+
+    <a href="#"
+        id="back-to-top"
+        class="notJumping">
+        <img src="../asset/backtotop.png" width="60px">
+    </a>
+            <!--footer part-->
+    <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="39" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+<script src="../js/SU_contactUs.js"></script>

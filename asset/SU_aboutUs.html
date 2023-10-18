@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="witdh=device-witdh, initial-scale=1.0">
+    <link href="../css/accordion.css" rel="stylesheet"> 
+    <link href="../css/SU_layout.css" rel="stylesheet" >
+    <link href="../css/SU_styles.css" rel="stylesheet" >  
+    <link href="../css/SU_livechat.css" rel="stylesheet">
+    <link href="../css/aboutUs.css" rel="stylesheet" >
+    <script src="../js/SU_liveChat.js"></script>
+    <script src="../js/SU_response.js"></script>
+    <script src="../js/SU_homepage.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="70px"/>
+        </div> 
+        
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <div class="icon">
+                            <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" height="30px"></a></li>
+                            <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                        </div>  
+            </ul>
+        </div>
+
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible"><img src="../asset/live_chat_icon-removebg-preview.png" width="50px">
+            </button>
+
+            <div class="content">
+                <div class="full-chat-block">
+
+                    <div class="outer-container">
+                        <div class="chat-container">
+                    
+                    
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><spam>Loading...</spam></p>
+                            </div>
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                            <button class="submit" onclick="sendButton()">send</button>
+                            <a button class="close-btn" onclick="togglePopup()" href="SU_index.html">&times;</button>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                        <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="../js/livechat.js"></script> 
+        <script src="../js/response.js"></script>
+        <script src="https://ajax.googleleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </header>
+    <article>
+        <h1>
+            <strong>About Us</strong>
+        </h1>
+        <p1>SwagUnit is an online multi-label store that specializes in providing a wide selection 
+        of streetwear brands such as ADLV, TNTCO, Nike, and Adidas, offering customers the best service
+        and high quality goods that will guarantee their satisfaction.</p1><br><br>
+        
+        <p1>We are constantly working with brands officials, retail stores, wholesalers, distributors, 
+        and sellers in this market to help us be able to provide the best prices for our customers. 
+        Our platform is also unique as it contains the latest streetwear clothing for both men and 
+        women at our website.</p1><br><br>
+        
+        <p1>We aim to be not only one of the best stores in Malaysia but also in South East Asia. We hope to provide the best shopping experience customers can get and be relevant 
+        to this community.</p1><br>
+        
+    </article>
+
+    <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="50" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="50" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/whatsapplogo.jpg" alt="Whatsapp"weight="50"height="50" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

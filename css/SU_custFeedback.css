@@ -1,0 +1,155 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Silkscreen;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a{
+    font-size: 25px;
+    font-family: Oxygen;
+    color:navy;
+}
+
+p{
+    font-size: 15px;
+    font-family: Russo;
+    clear: both;
+}
+
+.profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.cust_feedback {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+    background: rgba(211,211,211,0.9);
+    min-height: 240px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+
+}
+
+h2 {
+    font-family: Silkscreen;
+}
+
+.uploaded_photo {
+    width: 100px;
+    height: 100px;
+}
+  
+.contact_input{ 
+    height: 150px;
+    width: 100%;
+    max-width: 98%;
+    margin: 10px 10px;
+    border: solid #222222 3px;
+}
+
+.contact_form{
+    margin: 20px;
+    
+}
+
+input .review_file {
+    font-family: Oxygen;
+}
+
+::placeholder {
+    font-family: Oxygen;
+    opacity: 0.7;
+}
+
+.btnSubmit {
+    background-color: black;
+    height: 30px;
+    width: 125px;
+    color: white;
+    transition-duration: 0.2s;
+    font-family: Silkscreen;
+    cursor: pointer;
+}
+
+.btnSubmit:hover {
+    transform: scale(105%);
+    background-color: #222222;
+    color: rgba(211,211,211,0.9);
+}
+
+.cust-feedback span {
+    float: right;
+    margin: 2px;
+}
+
+.rating_star {
+    float: left;
+    height: 46px;
+    padding: 0 10px 0 0;
+  }
+  .rating_star:not(:checked) > input {
+    position: absolute;
+    display: none;
+  }
+  .rating_star:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #c7c5c5;
+  }
+  .rating_star:not(:checked) > label:before {
+    content: "★ ";
+  }
+  .rating_star > input:checked ~ label {
+    color: rgb(247, 231, 80);
+    
+  }
+  .rating_star:not(:checked) > label:hover,
+  .rating_star:not(:checked) > label:hover ~ label {
+    color: rgb(247, 231, 80);
+    transform: scale(150%);
+  }
+  .rating_star > input:checked + label:hover,
+  .rating_star > input:checked + label:hover ~ label,
+  .rating_star > input:checked ~ label:hover,
+  .rating_star > input:checked ~ label:hover ~ label,
+  .rating_star > label:hover ~ input:checked ~ label {
+    color: rgb(247, 231, 80);
+    transform: scale(150%);
+  }
+
+  span.checked {
+    color: rgb(247, 231, 80);
+  }
+
+  .file-label {
+    font-family: Silkscreen;
+  }
+  
+  .review_file {
+    font-family: Silkscreen;
+  }
+  
+.cust-feedback .cust-feedback-info {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.cust_feedback .like-dislike {
+  float: right;
+}
+
+.cust_feedback .like-dislike p{
+  text-align: center;
+  font-family: Silkscreen;
+  font-size: 13px;
+}
+
+

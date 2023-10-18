@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--basics-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tracking</title>
+    
+    <!--CSS&JS Stylesheets-->
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+    <link href="../css/SU_orderTracking.css" rel="stylesheet" > 
+    <script src="../js/SU_productTracking.js"></script>
+    
+
+</head>
+
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+        <script src="../js/SU_addToCart.js"></script>
+
+    </header>
+    <!--tracking-->
+    <article>
+
+        <div class="contact">
+            <a href="SU_contactUs.html">
+                <button class="contact">Contact Us !</button>
+            </a>
+        </div>
+        
+        <div class="container collapse">
+            <div class="chat-header">
+                <div class="title">Chat</div>
+                <div class="logo"><img src="../asset/live chat icon.jpeg"></div>
+            </div>
+            <div class="chat-body"></div>
+            <div class="chat-input">
+            <div class="input-sec">
+                <input type="text" id="txtInput" placeholder="Write a message" autofocus>
+            </div>
+            <div class="send">
+                <img src="../asset/send-msg.webp" width="30px" height="30px">
+            </div>
+        </div>
+    
+        </div>
+        <script src="../js/SU_liveChat.js" defer></script>
+        <script src="../js/SU_liveChat(E).js" defer></script>
+
+        <h1>Tracking Status</h1>
+        <section class="track">
+            
+            <ul class="list">
+    
+                <li class="item">
+                    <img src="../asset/payment.png">
+                    <span class="progress">1</span>
+                    <span class="label">Payment</span>
+                </li>
+                <li class="item item-details">
+                    <img src="../asset/checkout.png">
+                    <span class="progress">2</span>
+                    <span class="label">Checkout</span>
+                </li>
+                <li class="item Current-item">
+                    <img src="../asset/delivery.png">
+                    <span class="progress">3</span>
+                    <span class="label">Delivery</span>
+                    <a href="SU_tracking_details.html">Tracking Details</a>
+                </li>
+                <li class="item">
+                    <img src="../asset/sucess.png">
+                    <span class="progress">4</span>
+                    <span class="label">Success</span>
+                </li>
+            </ul>
+            </section>
+            <!--order items-->
+                <h2>My Orders</h2>
+                <p class="order-msg">View and edit all your pending, delivered and returned orders here.</p>
+                <div class="code">
+                    <h4>Order : #R09867356</h4>
+                    <small>Order Placed : Sun 20th NOV 2022</small>
+                </div>
+                <div class="small-container product">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Status</th>
+                            <th>Subtotal</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="/asset/adlv study boy short sleeve tee black.png">
+                                    <div>
+                                        <p><strong>ADLV Study Boy Short Sleeve Tee</strong></p>
+                                        <small>Price: RM 249.00</small>
+                                        <br>
+                                        <small>size: M</small><br>
+                                        <small>Quantity: 1</small>
+                                        <br><br>
+                                        <button onclick="show_cancel()">Cancel</button>
+                                        <div class="popup" id="popup">
+                                            <img src="../asset/cancel.png">
+                                            <p>Are you sure to cancel this order ?</p>
+                                            <button  onclick="show_msg(),show_cancel()">Yes</button> <button onclick="show_cancel()">No</button>
+                                        </div>
+                                        <!--yes btn-->
+                                        <div id="yes" class="yes">
+                                           <img src="../asset/tick.png">
+                                            <h1>Order Pending ...</h1>
+                                            <p>We will process your order as soon as possible.</p>    
+                                            <button id="dismiss" onclick="show_msg()">Dismiss</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>In-Transit</td>
+                            <td><strong>RM 249.00</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="/asset/tntco spray tee black.png">
+                                    <div>
+                                        <p><strong>Spray Tee Black</strong></p>
+                                        <small>Price: RM 279.00</small>
+                                        <br>
+                                        <small>size: M</small><br>
+                                        <small>Quantity: 1</small>
+                                        <br><br>
+                                        <button onclick="show_cancel()">Cancel</button>
+                                        <div class="popup" id="popup">
+                                            <img src="../asset/cancel.png">
+                                            <p>Are you sure to cancel this order ?</p>
+                                            <button  onclick="show_msg(),show_cancel()">Yes</button> <button onclick="show_cancel()">No</button>
+                                        </div>
+                                        <!--yes btn-->
+                                        <div id="yes" class="yes">
+                                            <img src="../asset/tick.png">
+                                            <h1>Order Pending ...</h1>
+                                            <p>We will process your order as soon as possible.</p>    
+                                            <button id="dismiss" onclick="show_msg()">Dismiss</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>In-Transit</td>
+                            <td><strong>RM279.00</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img src="/asset/adlv sunglasses girl short sleeve tee black.png">
+                                    <div>
+                                        <p><strong>Sunglasses Girl Short Sleeve Tee</strong></p>
+                                        <small>Price: RM 199.00</small>
+                                        <br>
+                                        <small>size: M</small><br>
+                                        <small>Quantity: 1</small>
+                                        <br><br>
+                                        <button onclick="show_cancel()">Cancel</button>
+                                        <div class="popup" id="popup">
+                                            <img src="../asset/cancel.png">
+                                            <p>Are you sure to cancel this order ?</p>
+                                            <button  onclick="show_msg(),show_cancel()">Yes</button> <button onclick="show_cancel()">No</button>
+                                        </div>
+                                        <!--yes btn-->
+                                        <div id="yes" class="yes">
+                                            <img src="../asset/tick.png">
+                                            <h1>Order Pending ...</h1>
+                                            <p>We will process your order as soon as possible.</p>    
+                                            <button id="dismiss" onclick="show_msg()">Dismiss</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>In-Transit</td>
+                            <td><strong>RM 199.00</strong></td>
+                        </tr>
+                    </table>
+                    
+
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td><strong>Subtotal:</strong></td>
+                                <td><strong><em>RM727.00</em></strong></td>
+                            </tr>
+
+                            <tr>
+                               <td><strong>Shipping Fee:</strong></td> 
+                                <td><span>RM 10.00</span></td>
+                                <td><strong><em>FREE SHIPPING</em></strong></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Total:</strong></td>
+                                <td><strong><em>RM727.00</em></strong></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                </div>
+                
+                
+            </section>
+
+            <a href="#"
+            id="back-to-top"
+            class="notJumping">
+             <img src="../asset/backtotop.png" width="60px">
+         </a>
+            
+            <!--footer part-->
+<footer id="footer">
+    <div class="position">
+        <div id="leftpart">
+            <h3>2022 @ Swag Unit </h3>
+        </div>
+        
+        <div id="rightpart">
+            <h3>Follow Us On:</h3>
+            <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="39" /></a></li>
+
+            <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+            <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+        </div>
+
+        <div id="middlepart">
+            <h3>Operation Hour</h3>
+            Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+        </div>
+
+
+        <div id="bottompart">
+            <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

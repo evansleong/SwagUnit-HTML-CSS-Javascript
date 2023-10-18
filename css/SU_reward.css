@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*left-sidevar*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sidebar{
+    height: 800px;
+    width: 270px;
+    background: black;
+    float: left;
+    position: sticky;
+    top: 70px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+h3 {
+    font-family: Silkscreen;
+}
+
+.links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: rgb(243, 249, 255);
+    font-family: Silkscreen;
+    width: fit-content;
+}
+.links img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.links a:hover{
+    color: cornsilk;
+}
+section{
+    border: 1px solid #222;
+    padding: 20px;
+}
+   
+.main-content h1{
+    font-size: 30px;
+}
+.main-content span{
+    font-size: 25px;
+    color: rgba(55, 55, 59, 0.873);
+}
+
+.profile span{
+    font-size: 20px;
+    color: grey;
+}
+.profile {
+    font-size: 15px;
+    display: block;
+    margin-left: 15px;
+}
+.profile img{
+    height: 30px;
+}
+.profile input[type="submit"]{
+    background: black;
+    color: aliceblue;
+    width: 160px;
+    height: 30px;
+    border-radius: 9px;
+}
+
+/*member point*/
+.point{
+    text-align: center;
+    border: 1px solid black;
+    line-height: 1.5em;
+}
+.point h1{
+    font-size: 25px;
+    font-family: Russo;
+}
+
+.accordion{
+    border: none;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 400px;
+    background: beige;
+    padding: 18px;
+    transition: 0.5s;
+    font-family: Russo;
+}
+.accordion:hover
+{ 
+    color: aliceblue;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    font-size: 17px;
+
+}
+
+.reward img{
+    height: 60px;
+}
+.reward {
+    display: none;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: Oxygen;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center
+}
+.tips{
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    font-family: Russo;
+}
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}

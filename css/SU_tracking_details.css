@@ -1,0 +1,126 @@
+section{
+    text-align: center;
+    font-family: Russo;
+    margin-top: 40px;
+}
+.main{
+    width: 100%;
+    height: auto;
+    font-family: Oxygen;
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+.main .heading{
+    font-family: Silkscreen;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+.heading::after{
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background-image: linear-gradient(to right,#eeaeca,#94bbe9);
+}
+.container{
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+.container:after{
+    position: absolute;
+    content: ' ';
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+.container ul{
+    list-style: none;
+
+}
+.container ul li{
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 1px 1px 25px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    z-index: 99;
+    position: relative;
+}
+.container ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translate(-30px);
+}
+.container ul li:nth-child(odd) .date{
+    right: 20px;
+}
+.container ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translate(30px);
+}
+.container ul li .title{
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+ul li p{
+    font-size: 13px;
+    color: black;
+    margin: 7px 0;
+    line-height: 15px;
+}
+ul li .date{
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    background-image: linear-gradient(to right,#c9d6e6,#c9cbd9);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-family: monospace;
+}
+.container ul li .dot{
+    width: 20px;
+    height: 20px;
+    background-color: #b2c1d4;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dot::after{
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container ul li:nth-child(odd) .dot{
+    right: -30px;
+    transform: translate(920%,-50%);
+}
+.container ul li:nth-child(even) .dot{
+    left: -30px;
+    transform: translate(-50%,-50%);
+}
+
+
+

@@ -1,0 +1,108 @@
+.box{
+    height: auto;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 6px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  Russo;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+.box aside img{
+    margin-right: 25px;
+    height: 500px;
+    width: 350px;
+   float: left;
+}
+.box span{
+    float: right;
+}
+
+.box span img {
+    opacity: 0.7;
+    transition: transform .7s ease-in-out;
+}
+
+.box span img:hover{
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+form .box{
+    display: inline;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+.box .input-box{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.box .input-box::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+.box .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin:20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+form .button{
+    height:45px;
+    margin:45px 0;
+    width: 100%;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    font-family: Silkscreen;
+}
+form .button input:hover{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: Oxygen;
+    font-size: 12px;
+    opacity: 0.5;
+}

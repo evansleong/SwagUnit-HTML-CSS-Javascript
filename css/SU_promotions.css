@@ -1,0 +1,106 @@
+h1{
+    font-size: 40px;
+    font-family: Silkscreen;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    user-select: none;
+}
+
+.img-news ul{
+    list-style: none;
+}
+
+.img-news ul li {
+    margin-right: 35px;
+    margin-bottom: 200px;
+}
+
+.dropdown-btn,
+.dropdown-btn2,
+.dropdown-btn3,
+.dropdown-btn4,
+.dropdown-btn5,
+.dropdown-btn6 {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Silkscreen;
+    transition: width 0.5s;
+  }
+
+  .dropdown-btn:hover,
+  .dropdown-btn2:hover,
+  .dropdown-btn3:hover,
+  .dropdown-btn4:hover,
+  .dropdown-btn5:hover,
+  .dropdown-btn6:hover {
+    background: radial-gradient(circle, rgba(109,144,185,1) 7%, rgba(187,199,220,1) 59%);
+    color: black;
+    animation:slidebg 2s linear infinite;
+  }
+
+  
+  .dropdown,
+  .dropdown2,
+  .dropdown3,
+  .dropdown4,
+  .dropdown5,
+  .dropdown6 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-info,
+  .dropdown-info2,
+  .dropdown-info3,
+  .dropdown-info4,
+  .dropdown-info5,
+  .dropdown-info6 {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,9,121,1) 35%, rgba(26,125,146,1) 100%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 950px;
+    height: fit-content;
+    animation: growDown 300ms ease-in-out forwards;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  p {
+    font-family: Russo;
+    font-size: 13px;
+    color: white;
+    line-height: 2;
+    text-align: center;
+  }
+
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+    
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+  
+.show {display: block;}
+

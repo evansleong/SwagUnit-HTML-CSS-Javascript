@@ -1,0 +1,57 @@
+.slideshow-container {
+    max-width: 1024px;
+    user-select: none;  
+}
+
+/* Hide the images by default */
+.mySlides{
+  display: none;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  width: 98%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.prev {
+  float: left;
+  transform: rotate(180deg);
+  position: relative;
+  bottom: 350px;
+  margin-bottom: -70px;
+
+}
+
+.next {
+  float: right;
+  transform: rotate(360deg);
+  position: relative;
+  bottom: 350px;
+}
+
+.prev:hover, .next:hover{
+    opacity: 1;
+    background: rgba(167, 167, 180, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    margin-left: 50%;
+    width: 10%;
+  }
+
+  to{
+    margin-left: 10px;
+    width: 98%;
+  }
+}

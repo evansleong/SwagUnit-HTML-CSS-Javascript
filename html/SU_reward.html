@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--basics-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>reward</title>
+    
+    <!--CSS&JS Stylesheets-->
+    <link href="../css/SU_layoutSample.css" rel="stylesheet" >
+    <link href="../css/SU_livechat.css" rel="stylesheet" >
+    <link href="../css/SU_reward.css" rel="stylesheet" > 
+    
+
+</head>
+
+<body>
+    <header>
+        <!--SU Logo-->
+        <div class="logo">
+            <img src="../asset/swagUnit.jpeg" alt="Swag Unit"  height="120px"/>  
+        </div>    
+        <!--Header-->
+        <div class="topnav">
+            <!--Order List-->
+                <ul >
+                    <li><a class="ggwp" href=SU_index.html>Homepage</a></li>
+                    <li><a class="ggwp" href=SU_products.html>Products</a></li>
+                    <li><a class="ggwp" href=SU_promotions.html>Promotions</a></li>                          
+                    <li><a class="ggwp" href=SU_aboutUs.html>About Us</a></li>
+                        <!--Dropdown start-->
+                        <div class="dropdown">
+                            <li>Services</li>
+                            <!--Dropdown content below SERVICES-->
+                                <div class="dropdown-content">                        
+                                    <li><a class="ggwp" href=SU_faq.html>FAQ</a></li>
+                                    <li><a class="ggwp" href=SU_custFeedback.html>Customer Feedback</a></li>
+                                    <li><a class="ggwp" href=SU_productTracking.html>Track your order</a></li>
+                                </div>
+                        </div>
+                        <!--dropdown end-->
+                            <!--Cart & User-->
+                            <div class="icon">
+                                <li><a class="cart" href=SU_addToCart.html><img src="../asset/add-to-cart-icon.png" width="30px"><span>0</span></a></li>
+                                <li><a class="user" href=SU_membership.html><img src="../asset/user_Icon.png" height="30px"></a></li>
+                            </div>  
+                </ul>
+        </div>
+
+        <script src="../js/SU_addToCart.js"></script>
+
+    </header>
+      <!--left-sidebar-->
+        <article>
+            <div class="contact">
+                <a href="SU_contactUs.html">
+                    <button class="contact">Contact Us !</button>
+                </a>
+            </div>
+           
+            <div class="left-sidebar">
+                <div class="links">
+                    <img src="../asset/account.png" alt="user"><br><br><br>
+                    <a href="SU_account.html">My Profile</a>
+                    <a href="SU_reward.html">My Reward</a>
+                 </div>
+            </div>
+            
+
+            <!--point-->
+        <div class="point">
+        <h3>Member</h3>
+        <h1>0&nbsp;&nbsp;&nbsp; POINTS</h1>
+         <br><br><br>
+       <button class="accordion">Ways to get more Points</button>
+            <div class="reward">
+                <p><img src="/asset/complete.png" alt="complete">&nbsp;&nbsp;We'll reward you 100 points when you complete your personal detail.</p><br><hr>
+                <p><img src="/asset/purchase.png" alt="buy">&nbsp;&nbsp;Every time you will earn point when you shopping online. RM 1 = 1 POINT.</p><br><hr>
+                <P><img src="/asset/friend.jpeg" alt="invite">&nbsp;&nbsp;Earn 250 points when you invited a friend to become a member and they complete their first purchase.</P><br><hr>
+                <p><img src="/asset/rate.png"alt="rate">&nbsp;&nbsp;&nbsp;Earn 3 points for each rating.</p><br><hr>
+            </div>
+
+            <div class="tips">
+                <h2>You don't have any points yet</h2>
+                <p>Earn more points to get more benefits.</p>
+                </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var reward = this.nextElementSibling;
+    if (reward.style.display === "block") {
+      reward.style.display = "none";
+    } else {
+      reward.style.display = "block";
+    }
+  });
+}
+        </script>
+        
+    </article>
+
+     <!--footer part-->
+     <footer id="footer">
+        <div class="position">
+            <div id="leftpart">
+                <h3>2022 @ Swag Unit </h3>
+            </div>
+            
+            <div id="rightpart">
+                <h3>Follow Us On:</h3>
+                <li><a class="footer-icon" href="https://www.facebook.com/"><img src="../asset/facebooklogo.jpg" alt="Facebook"weight="50"height="39" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.instagram.com/"><img src="../asset/instalogo.webp" alt="Instagram"weight="50"height="40" /></a></li>
+
+                <li><a class="footer-icon" href="https://www.whatsapp.com/"><img src="../asset/twitterlogo.png" alt="Whatsapp"weight="50"height="40" /></a></li>
+            </div>
+
+            <div id="middlepart">
+                <h3>Operation Hour</h3>
+                Mon - Sat : 10am - 10pm<br>Sun & Public Holiday : 10am - 5pm</p>
+            </div>
+                
+
+            <div id="bottompart">
+                <h3>STAY TUNED WITH US FOR INSTANT UPDATES AND EXCLUSIVE DEALS</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
